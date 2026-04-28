@@ -22,3 +22,9 @@ class siswa
     void setId(int pId);
     void displayAll(orang &o);
 };
+
+void siswa::displayAll(orang &o)
+{
+    cout << id << endl << o.nama;
+}
+
