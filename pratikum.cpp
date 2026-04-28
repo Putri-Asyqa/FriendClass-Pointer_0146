@@ -66,3 +66,18 @@ double kelilingBelahKetupat(BelahKetupat b, LayangLayang l) {
     return 4 * b.s; // keliling belah ketupat
 }
 
+int main() {
+    LayangLayang l;
+    BelahKetupat b;
+
+    l.input();
+    b.input();
+
+    l.output();
+    b.output();
+
+    cout << "Keliling Belah Ketupat (friend): "
+         << kelilingBelahKetupat(b, l) << endl;
+
+    return 0;
+}
