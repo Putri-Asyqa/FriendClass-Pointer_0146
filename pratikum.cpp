@@ -16,3 +16,21 @@ public:
         cout << "Sisi 1: "; cin >> s1;
         cout << "Sisi 2: "; cin >> s2;
     }
+
+    double luas() {
+        return 0.5 * d1 * d2;
+    }
+
+    double keliling() {
+        return 2 * (s1 + s2);
+    }
+
+    void output() {
+        cout << "\nLayang-Layang\n";
+        cout << "Luas: " << luas() << endl;
+        cout << "Keliling: " << keliling() << endl;
+    }
+
+    // friend function (keliling Belah Ketupat boleh akses LayangLayang)
+    friend double kelilingBelahKetupat(BelahKetupat b, LayangLayang l);
+};
