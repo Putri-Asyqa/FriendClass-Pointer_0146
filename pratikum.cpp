@@ -34,3 +34,8 @@ public:
     // friend function (keliling Belah Ketupat boleh akses LayangLayang)
     friend double kelilingBelahKetupat(BelahKetupat b, LayangLayang l);
 };
+
+class BelahKetupat {
+private:
+    double d1, d2; // diagonal
+    double s;      // sisi
