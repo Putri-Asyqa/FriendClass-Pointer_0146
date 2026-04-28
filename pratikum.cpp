@@ -39,3 +39,30 @@ class BelahKetupat {
 private:
     double d1, d2; // diagonal
     double s;      // sisi
+
+public:
+    void input() {
+        cout << "\nInput Belah Ketupat\n";
+        cout << "Diagonal 1: "; cin >> d1;
+        cout << "Diagonal 2: "; cin >> d2;
+        cout << "Sisi: "; cin >> s;
+    }
+
+    double luas() {
+        return 0.5 * d1 * d2;
+    }
+
+    void output() {
+        cout << "\nBelah Ketupat\n";
+        cout << "Luas: " << luas() << endl;
+    }
+
+    // friend function
+    friend double kelilingBelahKetupat(BelahKetupat b, LayangLayang l);
+};
+
+// Friend function (keliling Belah Ketupat)
+double kelilingBelahKetupat(BelahKetupat b, LayangLayang l) {
+    return 4 * b.s; // keliling belah ketupat
+}
+
