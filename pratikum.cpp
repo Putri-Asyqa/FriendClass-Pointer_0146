@@ -7,3 +7,12 @@ class LayangLayang {
 private:
     double d1, d2; // diagonal
     double s1, s2; // sisi
+
+public:
+    void input() {
+        cout << "Input Layang-Layang\n";
+        cout << "Diagonal 1: "; cin >> d1;
+        cout << "Diagonal 2: "; cin >> d2;
+        cout << "Sisi 1: "; cin >> s1;
+        cout << "Sisi 2: "; cin >> s2;
+    }
