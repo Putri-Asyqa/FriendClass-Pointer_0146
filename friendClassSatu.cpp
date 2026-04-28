@@ -6,4 +6,5 @@ class siswa;
 class orang
 {
 public:  
+    string nama;
 }
